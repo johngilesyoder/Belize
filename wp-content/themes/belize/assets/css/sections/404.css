@@ -6877,12 +6877,10 @@ h1 {
   margin-bottom: 0;
   font-weight: 400;
   line-height: 1em;
-  font-family: 'Tungsten A', 'Tungsten B';
   color: #007da3;
 }
 h2 {
   line-height: 1em;
-  font-family: klavika-medium, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: .02em;
   font-size: 21px;
