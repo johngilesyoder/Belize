@@ -31,6 +31,43 @@
 // Patterns
 @import "../globals/patterns.less";
 
+body {
+  position: relative;
+}
+
+.hero {
+  background: @gray-lighter;
+  height: 600px;
+  .vertical-center-parent();
+  background-size: cover;
+  background-position: 50% 50%;
+  .hero-content {
+    .vertical-center();
+    text-align: center;
+    .hero-title {
+      font-size: 60px;
+      font-weight: 300;
+      font-family: @font-family-sans-serif;
+      margin: 0;
+    }
+  }
+}
+
+.section-main {
+  color: #fff;
+  .hero-main {
+    height: 100vh;
+    background-image: url('../../img/hero-bg-main.png');
+    .hero-content {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      text-align: left;
+    }
+  }
+}
 
 
 // Media Queries

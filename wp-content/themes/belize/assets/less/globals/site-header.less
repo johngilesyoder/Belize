@@ -1,6 +1,50 @@
 // site-header.less
 // -----------------------------------------------------------------
+.site-header {
+  font-family: @font-family-sans-serif;
+}
+.navbar-brand {
+  margin-right: 30px;
+}
+.site-logo img {
+  height: 30px;
+}
+.navbar-nav {
+  li {
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: '\2022';
+      float: left;
+      color: #fff;
+      line-height: 60px;
+      margin: 0 10px;
+    }
+  }
+  a {
+    float: left;
+  }
+}
 
+.header-contact {
+  float: right;
+  line-height: 60px;
+  .header-phone {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .btn-inquire {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+}
 
 // Media Queries
 // --------------------------------------------------

@@ -38,18 +38,16 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=740887432614704&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
-    <script>try{Typekit.load();}catch(e){}</script>
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body data-spy="scroll" data-target="#site-header" <?php body_class(); ?>>
 
     <!-- Topbar -->
     <?php //get_template_part( 'includes/topbar' ); ?>
 
-      <nav class="site-header navbar navbar-default">
-        <div class="container">
+      <nav id="site-header" class="site-header navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -59,13 +57,17 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php echo home_url(); ?>">
-              <span class="site-logo">Belize</span>
+              <span class="site-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site-logo.svg" alt="Glover's Reef Belize"></span>
             </a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <?php primary_nav(); ?>
+            <div class="header-contact">
+              <span class="header-phone">+1 406 830 0557</span>
+              <a href="#contact" class="btn btn-primary btn-inquire">Inquire Now</a>
+            </div>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>

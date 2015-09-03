@@ -132,7 +132,7 @@ function primary_nav()
         'after'           => '',
         'link_before'     => '<span>',
         'link_after'      => '</span>',
-        'items_wrap'      => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+        'items_wrap'      => '<ul class="nav navbar-nav navbar-left">%3$s</ul>',
         'depth'           => 2,
         'walker'          => new wp_bootstrap_navwalker()
         )
@@ -209,8 +209,8 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('cloud-typography', 'https://cloud.typography.com/7252954/638486/css/fonts.css', array(), null, false);
-    wp_enqueue_style('cloud-typography'); // Enqueue it!
+    wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,400italic|Lato:400,700,900,400italic,700italic,300', array(), null, false);
+    wp_enqueue_style('google-fonts'); // Enqueue it!
 }
 
 // Load HTML5 Blank conditional styles
