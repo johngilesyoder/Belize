@@ -5,10 +5,11 @@
   <div id="parallax-main" class="parallaxParent hero-main">
     <div class="hero-bg" style=""></div>
     <div class="hero-content">
+      <img id="hero-logo" class="hero-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/site-logo.svg">
       <h1 class="main-hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <h2 class="marketing-statement">Acquire <strong>38 Years</strong> of excellence in the adventure travel market.</h2>
     <div class="row">
       <div class="col-md-3">
@@ -59,7 +60,7 @@
       <h2 id="title-location" class="hero-title">Location</h2>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
         <p>
@@ -67,20 +68,24 @@
         </p>
       </div>
       <div class="col-md-6">
-        <div class="bubbles">
-          <img class="bubble bubble-small" src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-coral.jpg">
-          <img class="bubble bubble-large" src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-turtle.jpg">
+        <div id="bubbles" class="bubbles">
+          <div id="bubble-small" class="bubble bubble-small">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-coral.jpg">
+          </div>
+          <div id="bubble-large" class="bubble bubble-large">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-turtle.jpg">
+          </div>
+          <aside id="bubbles-aside">
+            <p>
+              <strong>GLOVER’S REEF ATOLL</strong> &mdash; ONE OF THE MOST PRISTINE ATOLLS IN BELIZE AND A DESIGNATED WORLD HERITAGE SITE
+            </p>
+          </aside>
         </div>
-        <aside>
-          <p>
-            GLOVER’S REEF ATOLL &mdash; ONE OF THE MOST PRISTINE ATOLLS IN BELIZE AND A DESIGNATED WORLD HERITAGE SITE
-          </p>
-        </aside>
       </div>
     </div>
   </div>
   <div class="facilities subsection">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-10">
           <h3 class="subsection-title">Facilities</h3>
@@ -116,7 +121,7 @@
       <h2 id="title-adventures" class="hero-title">Adventures &amp; Tours</h2>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-10">
         <div class="primary-section">
@@ -152,7 +157,7 @@
     </div>
   </div>
   <div class="primary-section">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
         <p>
@@ -164,15 +169,13 @@
           The island is for sale only as part of a package with the purchase of the business. The business ($995,000) includes over $600,000 in assets, operational office in Moab, UT, website, and trademark. The island property ($1,800,000) includes 5.3 acre island resort and all structural facilities.
         </p>
         <div id="business-metric" class="business-metric">
-          <span class="metric-small">Grosses</span>
           <span class="metric-large"><div id="counter-number">0</div></span>
-          <span class="metric-small">Per year</span>
         </div>
       </div>
     </div>
   </div>
   <div class="subsection">
-    <div class="container">
+    <div class="container-fluid">
       <h3 class="subsection-title">Potential</h3>
       <div class="row">
         <div class="col-md-6">
@@ -199,6 +202,31 @@
     <div class="hero-content">
       <img id="icon-ecology" class="icon-ecology hero-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-ecology.svg">
       <h2 id="title-ecology" class="hero-title">Ecology</h2>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="primary-section">
+          <h3 class="primary-title">Brimming with exotic life</h3>
+          <p>
+            We have built a reputation of offering high quality trips highlighting professionally run sport activities, specializing in river and sea kayak adventures and extraordinary snorkeling opportunities. Using top-of-the-line equipment and trainers, we offer all inclusive, guided tour packages including: sea and surf kayaking, surfing, paddle boarding, kite and wind surfing, snorkeling and kayak fishing. Guests can scuba dive through a professional PADI dive shop operated by our friends and associates on an adjacent 1.2 acres. In addition to the activities offered on the island, we offer a 3-day trip on the mainland to the with waterfall rappelling and zip-line adventures in the Bocawina rainforest, a kayaking trip on the Mopan River (including an exploration of the limestone caves on the Caves Branch River) and a visit to the Castillo pyramid in the Xunantunich Mayan Ruins.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="photos">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-1.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-2.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-3.jpg">
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -6854,6 +6854,8 @@ fieldset[disabled] .btn-secondary.active {
 .site-header {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   border-bottom: 0;
+  -webkit-animation: dropHeader 500ms;
+          animation: dropHeader 500ms;
 }
 .navbar-brand {
   margin-right: 30px;
@@ -6894,6 +6896,9 @@ fieldset[disabled] .btn-secondary.active {
   font-size: 16px;
   margin-left: 15px;
 }
+.container-fluid {
+  padding: 0 30px;
+}
 .vertical-center {
   position: relative;
   top: 50%;
@@ -6910,6 +6915,110 @@ fieldset[disabled] .btn-secondary.active {
 }
 .alert strong {
   font-weight: normal;
+}
+@-webkit-keyframes dropHeader {
+  0% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes dropHeader {
+  0% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes hero-logo {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes hero-logo {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes roll {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@-webkit-keyframes move-small {
+  from {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes move-small {
+  from {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes move-large {
+  from {
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes move-large {
+  from {
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 body {
   position: relative;
@@ -7019,22 +7128,24 @@ section {
   background-image: url('../../img/hero-bg-main.jpg');
 }
 .section-main .hero-main .hero-content {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+.section-main .hero-main .hero-content .hero-logo {
+  height: 100px;
+  margin-bottom: 50px;
 }
 .section-main .hero-main .main-hero-title {
   font-weight: 300;
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
-  margin: 0 auto;
-  width: 70%;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 20px;
-  text-align: left;
   text-transform: none;
   letter-spacing: 0;
   font-size: 60px;
+  -webkit-animation: hero-logo 1s;
+          animation: hero-logo 1s;
 }
 .section-main .marketing-statement {
   font-size: 60px;
@@ -7068,12 +7179,16 @@ section {
 .section-location aside {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
-  color: #000;
+  line-height: 1.75em;
+  color: #fc7815;
   text-transform: uppercase;
-  font-weight: 700;
   background: #FFF6EF;
-  border-left: 4px solid #fc7815;
-  padding: 8px 12px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 250px;
+  position: absolute;
+  right: 0;
+  z-index: 4;
 }
 .section-location aside p {
   margin: 0;
@@ -7081,24 +7196,51 @@ section {
 .section-location .bubbles {
   position: relative;
   height: 314px;
+  width: 90%;
+  margin: 0 auto;
 }
 .section-location .bubble {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 500ms;
+          transition: opacity 500ms;
+}
+.section-location .bubble img {
   border-radius: 50%;
   border: 7px solid rgba(0, 0, 0, 0.14);
-  position: absolute;
+}
+.section-location .bubble.roll {
+  opacity: 1;
+}
+.section-location .bubble.roll img {
+  -webkit-animation: roll 1s;
+          animation: roll 1s;
 }
 .section-location .bubble-small {
+  left: 30px;
+  top: 50px;
+  z-index: 3;
+}
+.section-location .bubble-small img {
   width: 223px;
   height: 223px;
-  top: 50px;
-  left: 30px;
-  z-index: 2;
+}
+.section-location .bubble-small.roll {
+  -webkit-animation: move-small 1s;
+          animation: move-small 1s;
 }
 .section-location .bubble-large {
+  top: -20px;
+  left: 223px;
+  z-index: 2;
+}
+.section-location .bubble-large img {
   width: 310px;
   height: 310px;
-  top: -20px;
-  right: 30px;
+}
+.section-location .bubble-large.roll {
+  -webkit-animation: move-large 1s;
+          animation: move-large 1s;
 }
 .section-location .facilities .subsection-copy {
   margin-bottom: 50px;
@@ -7118,20 +7260,10 @@ section {
   background-image: url('../../img/hero-bg-business.jpg');
 }
 .section-business .business-metric {
-  margin: 50px 0;
-  padding: 0 30px;
-}
-.section-business .business-metric .metric-small {
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 300;
-  display: block;
-}
-.section-business .business-metric .metric-small:first-child {
-  text-align: left;
-}
-.section-business .business-metric .metric-small:last-child {
-  text-align: right;
+  margin: 30px 0 30px;
+  padding: 60px 0;
+  text-align: center;
+  background: #f3eef5;
 }
 .section-business .business-metric .metric-large {
   color: #8F65A3;
@@ -7139,8 +7271,36 @@ section {
   line-height: 1em;
   font-weight: 300;
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
-  display: block;
+  display: inline-block;
   text-align: center;
+  position: relative;
+  min-width: 504px;
+}
+.section-business .business-metric .metric-large:before {
+  content: "Grosses";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  display: inline-block;
+  color: #000;
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: -65px;
+}
+.section-business .business-metric .metric-large:after {
+  content: "Per year";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  display: inline-block;
+  color: #000;
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  bottom: -65px;
 }
 .section-business .belize-tourism {
   text-align: center;
@@ -7148,4 +7308,7 @@ section {
 }
 .section-ecology .hero-ecology .hero-bg {
   background-image: url('../../img/hero-bg-ecology.jpg');
+}
+.section-ecology .photos {
+  margin-top: 50px;
 }

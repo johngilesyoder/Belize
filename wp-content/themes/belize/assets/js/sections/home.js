@@ -6,10 +6,13 @@
     
     // DOM ready, take it away
 
+    $('#hero-logo').addClass('test');
+
     // init controller
     var controllerParallax = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
     var controllerIcon = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "0.4", duration: "200%"}});
     var controllerCounter = new ScrollMagic.Controller({globalSceneOptions: {duration: "200%"}});
+    var controllerBubble = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: ".8", duration: "200%"}});
 
     var counterOptions = {
       useEasing : true, 
@@ -109,9 +112,21 @@
       //.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
       .addTo(controllerIcon);
 
+    // COUNTER
     new ScrollMagic.Scene({triggerElement: "#counter-number"})
       .on("enter", counterStart)
       .addTo(controllerCounter);
+
+    // BUBBLES
+    var scene = new ScrollMagic.Scene({triggerElement: "#bubbles"})
+      // trigger animation by adding a css class
+      .setClassToggle("#bubble-small", "roll")
+      .addTo(controllerBubble);
+
+    var scene = new ScrollMagic.Scene({triggerElement: "#bubbles"})
+      // trigger animation by adding a css class
+      .setClassToggle("#bubble-large", "roll")
+      .addTo(controllerBubble);
 
   });
   
