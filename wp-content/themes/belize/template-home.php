@@ -1,51 +1,210 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
+
 <section id="main" class="section-main">
-  <div class="hero hero-main">
+  <div id="parallax-main" class="parallaxParent hero-main">
+    <div class="hero-bg" style=""></div>
     <div class="hero-content">
-      <h1 class="hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
+      <h1 class="main-hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="marketing-statement">Acquire <strong>38 Years</strong> of excellence in the adventure travel market.</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="main-feature">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature-location.jpg">
+          <h3>Location</h3>
+          <p>
+            Exotic private island in Glover’s Reef Atoll on Belize’s Barrier Reef—the most remote and unspoiled atolls found in Belize and a designated UNESCO World Heritage Site.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="main-feature">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature-activities.jpg">
+          <h3>Activities</h3>
+          <p>
+            The island offers all inclusive, guided tour packages including: sea and surf kayaking, surfing, paddle-boarding, kite and wind surfing, snorkeling, scuba diving, kayak fishing and rainforest and archeological trips to the mainland.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="main-feature">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature-business.jpg">
+          <h3>Business</h3>
+          <p>
+            This highly reputable and profitable turnkey adventure travel business was the first sea kayak outfitter in Belize has been in operation for 38 years.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="main-feature">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature-potential.jpg">
+          <h3>Potential</h3>
+          <p>
+            Belize is one of the hottest growing destinations for adventure travel and will soon rival Costa Rica as the region’s top travel destination. Growth rates in the tourism sector have been in the double digits every year.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="location" class="section-location">
-  <div class="hero hero-main">
+  <div id="parallax-location" class="parallaxParent hero-location">
+    <div class="hero-bg" style=""></div>
     <div class="hero-content">
-      <h1 class="hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
+      <img id="icon-location" class="icon-location hero-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-location.svg">
+      <h2 id="title-location" class="hero-title">Location</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          This turnkey adventure travel business is based on an exotic 13.6-acre private island and is one of five islands found at Glover’s Reef Atoll, the most remote and unspoiled atoll found in Belize. The business includes 5.3 acres on the windward side of the island bordered both the open Caribbean to the southeast and a quiet lagoon to the northwest. Glover’s Reef is part of the most famous of Belize’s natural attractions, the Barrier Reef, which stretches in a line 20 to 25 miles offshore for nearly the entire length of the country. The reef is studded with idyllic tropical islands, with the offshore atolls enclosing the most pristine of the reefs found in the country, including the internationally known Blue Hole.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="bubbles">
+          <img class="bubble bubble-small" src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-coral.jpg">
+          <img class="bubble bubble-large" src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-turtle.jpg">
+        </div>
+        <aside>
+          <p>
+            GLOVER’S REEF ATOLL &mdash; ONE OF THE MOST PRISTINE ATOLLS IN BELIZE AND A DESIGNATED WORLD HERITAGE SITE
+          </p>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="facilities subsection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <h3 class="subsection-title">Facilities</h3>
+          <div class="subsection-copy">
+            <p>
+              The exotic geography of the barrier reef and mountains, the azure Caribbean Sea, and the tropical climate combine to make Belize a highly desirable location to spend time during winter. With satellite internet service on the island, owners could now live right on the island while operating the business. The island resort has 16 rustic guest cabins (which house up to 37 guests) with spectacular ocean views, a shower complex, a kitchen and dining hall complex, cabins for staff, an office with phone and satellite internet system and a large dock on the lagoon. The remaining western half of the island is undeveloped but was recently purchased by a land holding company for re-sale.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="photos">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facilities-1.jpg">
+          </div>
+          <div class="col-md-4">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facilities-2.jpg">
+          </div>
+          <div class="col-md-4">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facilities-3.jpg">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="activities" class="section-activities">
-  <div class="hero hero-main">
+<section id="adventures" class="section-adventures">
+  <div id="parallax-adventures" class="parallaxParent hero-adventures">
+    <div class="hero-bg" style=""></div>
     <div class="hero-content">
-      <h1 class="hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
+      <img id="icon-adventures" class="icon-adventures hero-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-adventures.svg">
+      <h2 id="title-adventures" class="hero-title">Adventures &amp; Tours</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="primary-section">
+          <h3 class="primary-title">Adventure Sports &amp; Mainland Tours</h3>
+          <p>
+            We have built a reputation of offering high quality trips highlighting professionally run sport activities, specializing in river and sea kayak adventures and extraordinary snorkeling opportunities. Using top-of-the-line equipment and trainers, we offer all inclusive, guided tour packages including: sea and surf kayaking, surfing, paddle boarding, kite and wind surfing, snorkeling and kayak fishing. Guests can scuba dive through a professional PADI dive shop operated by our friends and associates on an adjacent 1.2 acres. In addition to the activities offered on the island, we offer a 3-day trip on the mainland to the with waterfall rappelling and zip-line adventures in the Bocawina rainforest, a kayaking trip on the Mopan River (including an exploration of the limestone caves on the Caves Branch River) and a visit to the Castillo pyramid in the Xunantunich Mayan Ruins.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="photos">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-1.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-2.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-3.jpg">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="business" class="section-business">
-  <div class="hero hero-main">
+  <div id="parallax-business" class="parallaxParent hero-business">
+    <div class="hero-bg" style=""></div>
     <div class="hero-content">
-      <h1 class="hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
+      <img id="icon-business" class="icon-business hero-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-business.svg">
+      <h2 id="title-business" class="hero-title">Business</h2>
+    </div>
+  </div>
+  <div class="primary-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          This highly reputable and profitable adventure travel business was the first sea kayak outfitter in Belize has been in operation since 1977 and grosses over $1M per year. The company has maintained a reputation for high quality trips and innovative itineraries. The business includes the 5.3-acre island resort and a 4-bed, 3-bath house office in an upscale neighborhood on a canal network one block from the ocean. The building serves as staff quarters, storage for equipment, vehicles and dock for our shuttle boat) in Belize City. Other assets include a 41’ shuttle boat, vehicle fleet for our trips, 37 sea kayaks, 10 surf kayaks, 4 fishing kayaks, 6 surfboards, 13 paddleboards, and 14 windsurf rigs. All reservations and record keeping are processed through the head office in Moab. Support staff includes: office managers, local guides, cooks, maintenance and groundskeepers, and local captains and drivers.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          The island is for sale only as part of a package with the purchase of the business. The business ($995,000) includes over $600,000 in assets, operational office in Moab, UT, website, and trademark. The island property ($1,800,000) includes 5.3 acre island resort and all structural facilities.
+        </p>
+        <div id="business-metric" class="business-metric">
+          <span class="metric-small">Grosses</span>
+          <span class="metric-large"><div id="counter-number">0</div></span>
+          <span class="metric-small">Per year</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="container">
+      <h3 class="subsection-title">Potential</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            Belize is fast becoming known as a top destination in the adventure travel market, with its extensive nature reserves, coral barrier reef, limestone cave system, and jungle habitat. The country also is becoming famous for its archeological treasures from the Mayan civilization, and has already established itself as a world-class scuba diving destination and sport fishing paradise. Its tropical setting, safe political climate, and excellent infrastructure are attracting ever increasing foreign investments, especially in the tourism sector which has seen phenomenal growth in the last five years. A new $40M airport expansion, new $50M Carnival Cruise Line terminal, and the construction of many new hotels and resorts attest to the rapid growth Belize is currently experiencing.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>
+            While the company’s growth rate has remained high in most years, there is much room for growth. The business currently only operates for six months a year and has not maximized its marketing potential. Without much additional capital the season could be extended and a scuba diving facility added. Belize, and Glover’s Reef in particular, are both internationally renowned for their premier diving sites. Sport fishing is another market that has not been developed at Glover’s Reef, and although the atoll is a protected Reserve, catch and release fishing is permitted. With a vigorous and professional marketing campaign, sales would most certainly increase.
+          </p>
+        </div>
+      </div>
+      <div class="belize-tourism">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-belize.svg">
+      </div>
     </div>
   </div>
 </section>
 
 <section id="ecology" class="section-ecology">
-  <div class="hero hero-main">
+  <div id="parallax-ecology" class="parallaxParent hero-ecology">
+    <div class="hero-bg" style=""></div>
     <div class="hero-content">
-      <h1 class="hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
+      <img id="icon-ecology" class="icon-ecology hero-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-ecology.svg">
+      <h2 id="title-ecology" class="hero-title">Ecology</h2>
     </div>
   </div>
 </section>
 
 <section id="contact" class="section-contact">
-  <div class="hero hero-main">
-    <div class="hero-content">
-      <h1 class="hero-title">Paradise for sale.<br>Adventure Travel Business Included.</h1>
-    </div>
-  </div>
+  CONTACT
 </section>
 
 

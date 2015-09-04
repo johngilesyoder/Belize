@@ -56,7 +56,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo home_url(); ?>">
+            <a class="navbar-brand" href="#main">
               <span class="site-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/site-logo.svg" alt="Glover's Reef Belize"></span>
             </a>
           </div>
