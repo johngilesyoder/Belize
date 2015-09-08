@@ -1,8 +1,9 @@
 		<footer class="site-footer">
-      <div class="footer-company">
-      	<div class="container">
-        	<span>© Glovers Reef Island <?php echo date('Y'); ?>. </span> All rights reserved.
-      	</div>
+    	<div class="container">
+        <div class="footer-company">
+      	 <span>© Glovers Reef Island <?php echo date('Y'); ?>. </span> All rights reserved.
+        </div>
+    	 </div>
       </div>
     </footer>
 

@@ -232,7 +232,15 @@
 </section>
 
 <section id="contact" class="section-contact">
-  CONTACT
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2 class="section-title">Contact Us</h2>
+        <h3>Register your interest.</h3>
+        <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
+      </div>
+    </div>
+  </div>
 </section>
 
 

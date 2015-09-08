@@ -6896,6 +6896,14 @@ fieldset[disabled] .btn-secondary.active {
   font-size: 16px;
   margin-left: 15px;
 }
+.site-footer {
+  background: #444;
+  color: #858585;
+  font-size: 14px;
+  border-top: 1px solid #555;
+  padding: 30px 0;
+  text-align: center;
+}
 .container-fluid {
   padding: 0 30px;
 }
