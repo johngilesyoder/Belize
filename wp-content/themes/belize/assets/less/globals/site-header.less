@@ -25,7 +25,7 @@
     &:after {
       content: '\2022';
       float: left;
-      color: #fff;
+      color: rgba(255,255,255,.2);
       line-height: 60px;
       margin: 0 10px;
     }
@@ -56,16 +56,82 @@
 // --------------------------------------------------
 
 // Large desktop and up
+@media (max-width: 1300px) {
+
+  .navbar-nav {
+    li {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+}
+
+// Large desktop and up
+@media (max-width: 1150px) {
+
+  .header-contact {
+    .header-phone {
+      display: none;
+    }
+    .btn-inquire {
+      margin-left: 0;
+    }
+  }
+
+}
+
+
+// Large desktop and up
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-nav {
+    li {
+      a {
+        float: none;
+      }
+    }
+  }
+
+  .header-contact {
+    float: none;
+    .btn-inquire {
+      display: block;
+      width: 50%;
+      margin-bottom: 15px;
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .navbar-nav {
+    li {
+      a {
+        float: none;
+      }
+    }
+  }
+
+  .header-contact {
+    float: none;
+    .btn-inquire {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {}

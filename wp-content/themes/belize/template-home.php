@@ -62,12 +62,12 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <p>
           This turnkey adventure travel business is based on an exotic 13.6-acre private island and is one of five islands found at Glover’s Reef Atoll, the most remote and unspoiled atoll found in Belize. The business includes 5.3 acres on the windward side of the island bordered both the open Caribbean to the southeast and a quiet lagoon to the northwest. Glover’s Reef is part of the most famous of Belize’s natural attractions, the Barrier Reef, which stretches in a line 20 to 25 miles offshore for nearly the entire length of the country. The reef is studded with idyllic tropical islands, with the offshore atolls enclosing the most pristine of the reefs found in the country, including the internationally known Blue Hole.
         </p>
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div id="bubbles" class="bubbles">
           <div id="bubble-small" class="bubble bubble-small">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-coral.jpg">
@@ -75,12 +75,17 @@
           <div id="bubble-large" class="bubble bubble-large">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bubble-turtle.jpg">
           </div>
-          <aside id="bubbles-aside">
+          <aside id="bubbles-aside" class="aside-desktop">
             <p>
               <strong>GLOVER’S REEF ATOLL</strong> &mdash; ONE OF THE MOST PRISTINE ATOLLS IN BELIZE AND A DESIGNATED WORLD HERITAGE SITE
             </p>
           </aside>
         </div>
+        <aside class="aside-mobile">
+          <p>
+            <strong>GLOVER’S REEF ATOLL</strong> &mdash; ONE OF THE MOST PRISTINE ATOLLS IN BELIZE AND A DESIGNATED WORLD HERITAGE SITE
+          </p>
+        </aside>
       </div>
     </div>
   </div>
@@ -118,7 +123,7 @@
     <div class="hero-bg" style=""></div>
     <div class="hero-content">
       <img id="icon-adventures" class="icon-adventures hero-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-adventures.svg">
-      <h2 id="title-adventures" class="hero-title">Adventures &amp; Tours</h2>
+      <h2 id="title-adventures" class="hero-title">Adventures<span> &amp; Tours</span></h2>
     </div>
   </div>
   <div class="container-fluid">
@@ -237,7 +242,7 @@
       <div class="col-md-6 col-md-offset-3">
         <h2 class="section-title">Contact Us</h2>
         <h3>Register your interest.</h3>
-        <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); } ?>
+        <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
       </div>
     </div>
   </div>

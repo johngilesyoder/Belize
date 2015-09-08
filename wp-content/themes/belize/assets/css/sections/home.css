@@ -4596,7 +4596,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-color: rgba(0, 0, 0, 0.75);
 }
 .navbar-inverse .navbar-brand {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4607,18 +4607,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #222222;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4643,8 +4643,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #000000;
+  color: #ffffff;
 }
 @media (max-width: 991px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
@@ -4654,18 +4654,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: rgba(0, 0, 0, 0.75);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
+    color: #cccccc;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
-    background-color: #000000;
+    background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #222222;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4675,13 +4675,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
 }
 .navbar-inverse .btn-link {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
@@ -6873,7 +6873,7 @@ fieldset[disabled] .btn-secondary.active {
 .navbar-nav li:after {
   content: '\2022';
   float: left;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.2);
   line-height: 60px;
   margin: 0 10px;
 }
@@ -6895,6 +6895,45 @@ fieldset[disabled] .btn-secondary.active {
   letter-spacing: 1.5px;
   font-size: 16px;
   margin-left: 15px;
+}
+@media (max-width: 1300px) {
+  .navbar-nav li:after {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .header-contact .header-phone {
+    display: none;
+  }
+  .header-contact .btn-inquire {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav li a {
+    float: none;
+  }
+  .header-contact {
+    float: none;
+  }
+  .header-contact .btn-inquire {
+    display: block;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav li a {
+    float: none;
+  }
+  .header-contact {
+    float: none;
+  }
+  .header-contact .btn-inquire {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 .site-footer {
   background: #444;
@@ -7028,6 +7067,16 @@ fieldset[disabled] .btn-secondary.active {
             transform: translateX(0);
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
 body {
   position: relative;
 }
@@ -7035,9 +7084,7 @@ section {
   margin-bottom: 60px;
 }
 .photos img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 .primary-section .primary-title {
   font-size: 24px;
@@ -7144,16 +7191,14 @@ section {
   margin-bottom: 50px;
 }
 .section-main .hero-main .main-hero-title {
+  font-size: 60px;
   font-weight: 300;
-  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 20px;
   text-transform: none;
   letter-spacing: 0;
-  font-size: 60px;
   -webkit-animation: hero-logo 1s;
           animation: hero-logo 1s;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
 }
 .section-main .marketing-statement {
   font-size: 60px;
@@ -7177,9 +7222,7 @@ section {
   margin-bottom: 20px;
 }
 .section-main .main-feature img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 .section-location .hero-location .hero-bg {
   background-image: url('../../img/hero-bg-location.jpg');
@@ -7201,11 +7244,15 @@ section {
 .section-location aside p {
   margin: 0;
 }
+.section-location aside.aside-mobile {
+  display: none;
+}
 .section-location .bubbles {
   position: relative;
   height: 314px;
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .section-location .bubble {
   opacity: 0;
@@ -7238,7 +7285,7 @@ section {
           animation: move-small 1s;
 }
 .section-location .bubble-large {
-  top: -20px;
+  top: 0;
   left: 223px;
   z-index: 2;
 }
@@ -7282,7 +7329,6 @@ section {
   display: inline-block;
   text-align: center;
   position: relative;
-  min-width: 504px;
 }
 .section-business .business-metric .metric-large:before {
   content: "Grosses";
@@ -7455,4 +7501,333 @@ textarea.section-contact textarea {
   letter-spacing: 7px;
   font-size: 18px;
   font-weight: 700;
+}
+@media (min-width: 1440px) and (max-width: 1740px) {
+  .section-location aside {
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+  }
+  .section-location aside.aside-desktop {
+    display: none;
+  }
+  .section-location aside.aside-mobile {
+    display: block;
+  }
+  .section-location .bubble-small {
+    left: 18.5%;
+    top: 50px;
+  }
+  .section-location .bubble-small img {
+    width: 210px;
+    height: 210px;
+  }
+  .section-location .bubble-large {
+    top: 0;
+    left: auto;
+    right: 18.5%;
+    z-index: 2;
+  }
+  .section-location .bubble-large img {
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .section-location aside {
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+  }
+  .section-location aside.aside-desktop {
+    display: none;
+  }
+  .section-location aside.aside-mobile {
+    display: block;
+  }
+  .section-location .bubble-small {
+    left: 13%;
+    top: 50px;
+  }
+  .section-location .bubble-small img {
+    width: 210px;
+    height: 210px;
+  }
+  .section-location .bubble-large {
+    top: 0;
+    left: auto;
+    right: 13%;
+    z-index: 2;
+  }
+  .section-location .bubble-large img {
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-location aside {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .section-location aside.aside-desktop {
+    display: none;
+  }
+  .section-location aside.aside-mobile {
+    display: block;
+  }
+  .section-location .bubbles {
+    position: relative;
+    height: 314px;
+    width: 100%;
+  }
+  .section-location .bubble-small {
+    left: 0;
+    top: 50px;
+  }
+  .section-location .bubble-small img {
+    width: 210px;
+    height: 210px;
+  }
+  .section-location .bubble-large {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 2;
+  }
+  .section-location .bubble-large img {
+    width: 290px;
+    height: 290px;
+  }
+  .section-business .business-metric .metric-large {
+    font-size: 60px;
+    min-width: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .photos img {
+    margin-bottom: 15px;
+  }
+  .primary-section .primary-title {
+    font-size: 21px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+  }
+  .subsection {
+    padding: 30px 0;
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+  .subsection .subsection-title {
+    font-size: 21px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+  }
+  .parallaxParent {
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .hero-content .hero-title {
+    font-size: 45px;
+    letter-spacing: 15px;
+  }
+  .section-main {
+    margin-bottom: 15px;
+  }
+  .section-main .hero-main .hero-content .hero-logo {
+    height: 75px;
+    margin-bottom: 40px;
+  }
+  .section-main .hero-main .main-hero-title {
+    font-size: 45px;
+    letter-spacing: 0;
+  }
+  .section-main .marketing-statement {
+    font-size: 36px;
+    margin: 0 0 30px;
+  }
+  .section-main .main-feature {
+    margin-bottom: 45px;
+  }
+  .section-location aside {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .section-location aside.aside-desktop {
+    display: none;
+  }
+  .section-location aside.aside-mobile {
+    display: block;
+  }
+  .section-location .bubbles {
+    position: relative;
+    height: 314px;
+    width: 100%;
+    margin: 30px auto 0;
+  }
+  .section-location .bubble-small {
+    left: 0;
+    top: 50px;
+  }
+  .section-location .bubble-small img {
+    width: 210px;
+    height: 210px;
+  }
+  .section-location .bubble-large {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 2;
+  }
+  .section-location .bubble-large img {
+    width: 290px;
+    height: 290px;
+  }
+  .section-location .facilities .subsection-copy {
+    margin-bottom: 50px;
+  }
+  .section-location .facilities img {
+    width: 100%;
+  }
+  .section-adventures .hero-adventures .hero-title {
+    font-size: 32px;
+  }
+  .section-adventures .hero-adventures .hero-title span {
+    display: none;
+  }
+  .section-adventures .primary-section {
+    margin-bottom: 50px;
+  }
+  .section-business .business-metric .metric-large {
+    font-size: 60px;
+    min-width: 100px;
+  }
+  .section-business .belize-tourism {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .photos img {
+    margin-bottom: 15px;
+  }
+  .primary-section .primary-title {
+    font-size: 21px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+  }
+  .subsection {
+    padding: 30px 0;
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+  .subsection .subsection-title {
+    font-size: 21px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+  }
+  .parallaxParent {
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .hero-content .hero-title {
+    font-size: 45px;
+    letter-spacing: 15px;
+  }
+  .section-main {
+    margin-bottom: 15px;
+  }
+  .section-main .hero-main .hero-content .hero-logo {
+    height: 75px;
+    margin-bottom: 40px;
+  }
+  .section-main .hero-main .main-hero-title {
+    font-size: 45px;
+    letter-spacing: 0;
+  }
+  .section-main .marketing-statement {
+    font-size: 36px;
+    margin: 0 0 30px;
+  }
+  .section-main .main-feature {
+    margin-bottom: 45px;
+  }
+  .section-location aside {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .section-location aside.aside-desktop {
+    display: none;
+  }
+  .section-location aside.aside-mobile {
+    display: block;
+  }
+  .section-location .bubbles {
+    position: relative;
+    height: 314px;
+    width: 100%;
+    margin: 30px auto 0;
+  }
+  .section-location .bubble-small {
+    left: 0;
+    top: 50px;
+  }
+  .section-location .bubble-small img {
+    width: 210px;
+    height: 210px;
+  }
+  .section-location .bubble-large {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 2;
+  }
+  .section-location .bubble-large img {
+    width: 290px;
+    height: 290px;
+  }
+  .section-location .facilities .subsection-copy {
+    margin-bottom: 50px;
+  }
+  .section-location .facilities img {
+    width: 100%;
+  }
+  .section-adventures .hero-adventures .hero-title {
+    font-size: 32px;
+  }
+  .section-adventures .hero-adventures .hero-title span {
+    display: none;
+  }
+  .section-adventures .primary-section {
+    margin-bottom: 50px;
+  }
+  .section-business .business-metric .metric-large {
+    font-size: 60px;
+    min-width: 100px;
+  }
+  .section-business .belize-tourism {
+    text-align: center;
+    margin-top: 30px;
+  }
 }

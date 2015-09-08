@@ -4596,7 +4596,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-color: rgba(0, 0, 0, 0.75);
 }
 .navbar-inverse .navbar-brand {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4607,18 +4607,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #222222;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4643,8 +4643,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #000000;
+  color: #ffffff;
 }
 @media (max-width: 991px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
@@ -4654,18 +4654,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: rgba(0, 0, 0, 0.75);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
+    color: #cccccc;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
-    background-color: #000000;
+    background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #222222;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4675,13 +4675,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
 }
 .navbar-inverse .btn-link {
-  color: #ffffff;
+  color: #cccccc;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
@@ -6873,7 +6873,7 @@ fieldset[disabled] .btn-secondary.active {
 .navbar-nav li:after {
   content: '\2022';
   float: left;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.2);
   line-height: 60px;
   margin: 0 10px;
 }
@@ -6895,6 +6895,45 @@ fieldset[disabled] .btn-secondary.active {
   letter-spacing: 1.5px;
   font-size: 16px;
   margin-left: 15px;
+}
+@media (max-width: 1300px) {
+  .navbar-nav li:after {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .header-contact .header-phone {
+    display: none;
+  }
+  .header-contact .btn-inquire {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav li a {
+    float: none;
+  }
+  .header-contact {
+    float: none;
+  }
+  .header-contact .btn-inquire {
+    display: block;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav li a {
+    float: none;
+  }
+  .header-contact {
+    float: none;
+  }
+  .header-contact .btn-inquire {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 .site-footer {
   background: #444;
@@ -7026,5 +7065,15 @@ fieldset[disabled] .btn-secondary.active {
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 15px;
   }
 }
