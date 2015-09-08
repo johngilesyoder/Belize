@@ -223,13 +223,13 @@
     <div class="photos">
       <div class="row">
         <div class="col-md-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-1.jpg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ecology-1.jpg">
         </div>
         <div class="col-md-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-2.jpg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ecology-2.jpg">
         </div>
         <div class="col-md-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/adventure-3.jpg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ecology-3.jpg">
         </div>
       </div>
     </div>

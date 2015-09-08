@@ -7402,6 +7402,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/belize\/assets\/img\/ecology-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47310,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/ecology-1.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/ecology-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/belize\/assets\/img\/ecology-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110421,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/ecology-2.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/ecology-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/belize\/assets\/img\/ecology-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100829,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/ecology-3.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/ecology-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/belize\/assets\/img\/facilities-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
