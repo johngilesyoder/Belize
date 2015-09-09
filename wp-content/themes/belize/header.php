@@ -71,7 +71,7 @@
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <?php primary_nav(); ?>
             <div class="header-contact">
-              <span class="header-phone">+1 406 830 0557</span>
+              <span class="header-phone">+1 650 416 8063</span>
               <a href="#contact" class="btn btn-primary btn-inquire">Inquire Now</a>
             </div>
           </div><!-- /.navbar-collapse -->

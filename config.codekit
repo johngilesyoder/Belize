@@ -7567,6 +7567,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/belize\/assets\/img\/open-graph-img-square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 672171,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/open-graph-img-square.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/open-graph-img-square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/belize\/assets\/img\/open-graph-img.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 352864,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/open-graph-img.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/open-graph-img.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/belize\/assets\/img\/open-graph-img.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.94089e+06,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/open-graph-img.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/belize\/assets\/img\/open-graph-img.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/belize\/assets\/js\/lib\/animation.gsap.js": {
 		"fileType": 64,
 		"ignore": 1,
