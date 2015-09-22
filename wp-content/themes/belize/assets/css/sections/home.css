@@ -7229,7 +7229,6 @@ section {
 }
 .section-location .hero-location .hero-bg {
   background-image: url('../../img/hero-bg-location.jpg');
-  background-position: 50% 0%;
 }
 .section-location aside {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
@@ -7846,6 +7845,9 @@ textarea.section-contact textarea {
   .hero-content .hero-title {
     font-size: 24px;
     font-weight: 400;
+  }
+  .section-location .bubble-small {
+    display: none;
   }
   .section-adventures .hero-content .hero-title {
     font-size: 21px;
