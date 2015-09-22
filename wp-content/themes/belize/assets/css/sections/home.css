@@ -7224,8 +7224,12 @@ section {
 .section-main .main-feature img {
   width: 100%;
 }
+.section-location .hero-location .hero-icon {
+  margin-bottom: 70px;
+}
 .section-location .hero-location .hero-bg {
   background-image: url('../../img/hero-bg-location.jpg');
+  background-position: 50% 0%;
 }
 .section-location aside {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
@@ -7829,5 +7833,27 @@ textarea.section-contact textarea {
   .section-business .belize-tourism {
     text-align: center;
     margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .section-main .hero-main .hero-content .hero-logo {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .section-main .hero-main .main-hero-title {
+    font-size: 36px;
+  }
+  .hero-content .hero-title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .section-adventures .hero-content .hero-title {
+    font-size: 21px;
+  }
+  .section-business .business-metric .metric-large {
+    font-size: 48px;
+  }
+  .section-business .belize-tourism img {
+    width: 100%;
   }
 }

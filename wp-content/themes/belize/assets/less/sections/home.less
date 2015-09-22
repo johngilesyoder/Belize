@@ -186,8 +186,12 @@ section {
 
 .section-location {
   .hero-location {
+    .hero-icon {
+      margin-bottom: 70px;
+    }
     .hero-bg {
       background-image: url('../../img/hero-bg-location.jpg');
+      background-position: 50% -0%;
     }
   }
   aside {
@@ -837,4 +841,49 @@ section {
 }
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .section-main {
+    .hero-main {
+      .hero-content {
+        .hero-logo {
+          width: 80%;
+          margin-bottom: 30px;
+        }
+      }
+      .main-hero-title {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .hero-content {
+    .hero-title {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .section-adventures {
+    .hero-content {
+      .hero-title {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .section-business {
+    .business-metric {
+      .metric-large {
+        font-size: 48px;
+      }
+
+    }
+    .belize-tourism {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
