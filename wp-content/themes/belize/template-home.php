@@ -174,7 +174,7 @@
       </div>
       <div class="col-md-6">
         <p>
-          The island is for sale only as part of a package with the purchase of the business. The business ($995,000) includes over $600,000 in assets, an operational office in Moab, Utah, a website, and a trademark. The island property ($1,800,000) includes 5.3 acre island resort and all structural facilities.
+          The island property and business are for sale as a package for US <strong class="total-price">$2,795,000</strong>. The business is valued at <strong>$995,000</strong> with over <strong>$600,000</strong> in fixed assets. The 5.3 acre island island property is valued at <strong>$1,800,000</strong> and includes all structural facilities of the resort.
         </p>
         <div id="business-metric" class="business-metric">
           <span class="metric-large"><div id="counter-number">0</div></span>

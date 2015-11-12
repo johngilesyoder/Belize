@@ -6,8 +6,6 @@
     
     // DOM ready, take it away
 
-    $('#hero-logo').addClass('test');
-
     // init controller
     var controllerParallax = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
     var controllerIcon = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "0.4", duration: "200%"}});
